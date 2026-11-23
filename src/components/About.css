@@ -1,0 +1,164 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.about__bio-card {
+  background: var(--surface-light);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.about__bio-text {
+  font-size: 1.06rem;
+  line-height: 1.85;
+  color: var(--text-primary);
+  margin-bottom: 28px;
+}
+
+.about__highlights {
+  display: grid;
+  gap: 14px;
+}
+
+.about__highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  transition: transform var(--transition-fast), border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.about__highlight-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--blue-400);
+  box-shadow: var(--shadow-sm);
+}
+
+.about__highlight-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--blue-50);
+  color: var(--blue-600);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about__highlight-label {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.about__highlight-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--navy-900);
+  margin: 2px 0;
+}
+
+.about__highlight-detail {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Area of Interest */
+.about__interests {
+  background: linear-gradient(160deg, var(--navy-950) 0%, var(--navy-900) 100%);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.about__interests-header {
+  margin-bottom: 22px;
+}
+
+.about__interests-header h3 {
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.about__interests-header p {
+  font-size: 0.9rem;
+  color: var(--text-on-dark-muted);
+}
+
+.about__interest-cards {
+  display: grid;
+  gap: 14px;
+}
+
+.interest-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  transition: transform var(--transition-fast), border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.interest-card:hover {
+  transform: translateX(4px);
+  background: rgba(37, 99, 235, 0.16);
+  border-color: rgba(96, 165, 250, 0.45);
+}
+
+.interest-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(37, 99, 235, 0.3));
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: var(--sky-400);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.interest-card__body h4 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.interest-card__body p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-on-dark-muted);
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__bio-card,
+  .about__interests {
+    padding: 24px;
+  }
+}

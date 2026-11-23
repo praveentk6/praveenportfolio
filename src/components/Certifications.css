@@ -1,0 +1,100 @@
+.certifications__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform var(--transition-base), border-color var(--transition-base),
+    background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  background: rgba(37, 99, 235, 0.14);
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 22px 44px rgba(2, 8, 22, 0.36);
+}
+
+.cert-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cert-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.24), rgba(37, 99, 235, 0.42));
+  border: 1px solid rgba(96, 165, 250, 0.38);
+  color: var(--sky-400);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-card__issuer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: #bae6fd;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.cert-card__title {
+  font-size: 1.24rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.cert-card__description {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: var(--text-on-dark-muted);
+  margin-bottom: 22px;
+  flex: 1;
+}
+
+.cert-card__footer {
+  padding-top: 16px;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.cert-card__date {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  color: var(--sky-400);
+}
+
+@media (max-width: 760px) {
+  .certifications__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 24px;
+  }
+}

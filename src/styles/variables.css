@@ -1,0 +1,53 @@
+:root {
+  /* Core Palette: Dark Navy, Royal Blue & Crisp White */
+  --navy-950: #060f20;
+  --navy-900: #0a162d;
+  --navy-800: #102140;
+  --navy-700: #1a325c;
+
+  --blue-700: #1d4ed8;
+  --blue-600: #2563eb;
+  --blue-500: #3b82f6;
+  --blue-400: #60a5fa;
+  --sky-400: #38bdf8;
+  --blue-100: #dbeafe;
+  --blue-50: #eff6ff;
+
+  --white: #ffffff;
+  --surface-light: #f6f9fe;
+  --surface-tint: #edf3fc;
+  --border-light: #dce6f5;
+  --border-dark: rgba(148, 163, 184, 0.18);
+
+  /* Typography Colors */
+  --text-primary: #0b162c;
+  --text-secondary: #43536b;
+  --text-muted: #64748b;
+  --text-on-dark: #f8fafc;
+  --text-on-dark-muted: #9fb3cf;
+
+  /* Fonts */
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Layout */
+  --container-max: 1180px;
+  --nav-height: 76px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(10, 22, 45, 0.05);
+  --shadow-md: 0 12px 32px rgba(10, 22, 45, 0.08);
+  --shadow-lg: 0 22px 48px rgba(10, 22, 45, 0.14);
+  --shadow-blue: 0 14px 32px rgba(37, 99, 235, 0.28);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 180ms var(--ease-out);
+  --transition-base: 280ms var(--ease-out);
+}

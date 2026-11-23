@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="tttBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050c1c"/>
+      <stop offset="55%" stop-color="#0a1732"/>
+      <stop offset="100%" stop-color="#132d5e"/>
+    </linearGradient>
+    <linearGradient id="xGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="glowBlue" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.65"/>
+    </filter>
+    <filter id="winShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#010510" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#tttBg)"/>
+  <circle cx="960" cy="140" r="240" fill="#2563eb" opacity="0.22"/>
+  <circle cx="220" cy="620" r="220" fill="#38bdf8" opacity="0.14"/>
+
+  <!-- Desktop App Window -->
+  <g filter="url(#winShadow)">
+    <rect x="136" y="66" width="928" height="618" rx="24" fill="#0b1730" stroke="rgba(96,165,250,0.28)" stroke-width="1.5"/>
+    <!-- Window Bar -->
+    <path d="M136 90 a24 24 0 0 1 24 -24 h880 a24 24 0 0 1 24 24 v32 h-928 z" fill="#102143"/>
+    <circle cx="174" cy="94" r="7" fill="#ef4444"/>
+    <circle cx="198" cy="94" r="7" fill="#f59e0b"/>
+    <circle cx="222" cy="94" r="7" fill="#10b981"/>
+    <text x="600" y="99" text-anchor="middle" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="13.5" font-weight="600">tic_tac_toe.py · Two-Player Python Game</text>
+
+    <!-- Left Panel: Scoreboard & Controls -->
+    <rect x="176" y="156" width="316" height="486" rx="18" fill="#0f2042" stroke="rgba(148,163,184,0.16)"/>
+    <rect x="204" y="186" width="126" height="28" rx="14" fill="rgba(56,189,248,0.16)"/>
+    <text x="267" y="204" text-anchor="middle" fill="#7dd3fc" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="700">PYTHON 3.X</text>
+
+    <text x="204" y="252" fill="#ffffff" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="28" font-weight="800">Tic Tac Toe</text>
+    <text x="204" y="278" fill="#94a3b8" font-family="Inter, Segoe UI, sans-serif" font-size="14">Two-Player Strategy Engine</text>
+
+    <!-- Player X Score -->
+    <rect x="204" y="308" width="260" height="84" rx="14" fill="rgba(37,99,235,0.22)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="226" y="338" fill="#7dd3fc" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700">PLAYER 1 · X (WINNER)</text>
+    <text x="226" y="372" fill="#ffffff" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="26" font-weight="800">Score: 03</text>
+
+    <!-- Player O Score -->
+    <rect x="204" y="408" width="260" height="84" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(148,163,184,0.2)"/>
+    <text x="226" y="438" fill="#cbd5e1" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600">PLAYER 2 · O</text>
+    <text x="226" y="472" fill="#e2e8f0" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="26" font-weight="800">Score: 02</text>
+
+    <!-- Reset Button -->
+    <rect x="204" y="528" width="260" height="48" rx="12" fill="url(#xGrad)"/>
+    <text x="334" y="558" text-anchor="middle" fill="#ffffff" font-family="Inter, Segoe UI, sans-serif" font-size="15" font-weight="700">Play New Round</text>
+
+    <text x="204" y="614" fill="#64748b" font-family="JetBrains Mono, monospace" font-size="12">Turn validation · Win detection</text>
+
+    <!-- Right Panel: 3x3 Glassmorphic Game Grid -->
+    <g transform="translate(544, 162)">
+      <rect x="0" y="0" width="474" height="474" rx="24" fill="#071228" stroke="rgba(96,165,250,0.25)" stroke-width="1.5"/>
+
+      <!-- 3x3 Cells (132px each with 18px gaps) -->
+      <!-- Row 1 -->
+      <rect x="21" y="21" width="132" height="132" rx="18" fill="#132a57" stroke="#38bdf8" stroke-width="1.5"/>
+      <rect x="171" y="21" width="132" height="132" rx="18" fill="#0e2042" stroke="rgba(148,163,184,0.16)"/>
+      <rect x="321" y="21" width="132" height="132" rx="18" fill="#0e2042" stroke="rgba(148,163,184,0.16)"/>
+
+      <!-- Row 2 -->
+      <rect x="21" y="171" width="132" height="132" rx="18" fill="#0e2042" stroke="rgba(148,163,184,0.16)"/>
+      <rect x="171" y="171" width="132" height="132" rx="18" fill="#132a57" stroke="#38bdf8" stroke-width="1.5"/>
+      <rect x="321" y="171" width="132" height="132" rx="18" fill="#0e2042" stroke="rgba(148,163,184,0.16)"/>
+
+      <!-- Row 3 -->
+      <rect x="21" y="321" width="132" height="132" rx="18" fill="#0e2042" stroke="rgba(148,163,184,0.16)"/>
+      <rect x="171" y="321" width="132" height="132" rx="18" fill="#0e2042" stroke="rgba(148,163,184,0.16)"/>
+      <rect x="321" y="321" width="132" height="132" rx="18" fill="#132a57" stroke="#38bdf8" stroke-width="1.5"/>
+
+      <!-- Winning Diagonal Glow Line -->
+      <line x1="60" y1="60" x2="414" y2="414" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" opacity="0.4" filter="url(#glowBlue)"/>
+
+      <!-- Glowing X Marks (Diagonal Win: (0,0), (1,1), (2,2)) -->
+      <g stroke="url(#xGrad)" stroke-width="12" stroke-linecap="round" filter="url(#glowBlue)">
+        <line x1="57" y1="57" x2="117" y2="117"/>
+        <line x1="117" y1="57" x2="57" y2="117"/>
+
+        <line x1="207" y1="207" x2="267" y2="267"/>
+        <line x1="267" y1="207" x2="207" y2="267"/>
+
+        <line x1="357" y1="357" x2="417" y2="417"/>
+        <line x1="417" y1="357" x2="357" y2="417"/>
+      </g>
+
+      <!-- Crisp White/Cyan O Marks ((0,1), (1,2), (2,0)) -->
+      <g fill="none" stroke="#e0f2fe" stroke-width="11">
+        <circle cx="237" cy="87" r="32"/>
+        <circle cx="387" cy="237" r="32"/>
+        <circle cx="87" cy="387" r="32"/>
+      </g>
+    </g>
+  </g>
+</svg>
